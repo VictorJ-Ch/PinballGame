@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class BumperScript : MonoBehaviour
+public class BumberV2Script : MonoBehaviour
 {
     public float force = 100f;
     public float forceRadius = 1f;
