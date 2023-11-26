@@ -10,6 +10,8 @@ public class BallManagerScript : MonoBehaviour
     public Transform spawnPosition;
     public TextMeshPro display;
     public bool gameOver = false;
+    public GameObject gameOverCanvas;
+
     void Update()
     {
         //Check for gameOver
@@ -19,6 +21,11 @@ public class BallManagerScript : MonoBehaviour
             {
                 display.text = "Last Ball";
                 gameOver = true;
+                //Game Over Canvas
+                if (gameOverCanvas)
+                {
+                    gameOverCanvas.SetActive(true);
+                }
             }
         }
         //Ball has drained and game is not over
